@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Page Title</title>
+</head>
+<body>
+  <script>
+    // Your JavaScript goes here!
+    // ex1
+    // let admin;
+    // let name = "John";
+    // admin = name;
+    // alert(admin)
+    // ex2
+    // let ourPlanetName = "Earth";
+    // let currentUserName = John;
+    // ex3
+    // const birthday = "18.04.1982";
+    // const age = someCode(birthday);
+    // const BIRTHDAY = '18.04.1982'; // make uppercase? Yes
+    // const AGE = someCode(BIRTHDAY); // make uppercase? no
+    //We generally use upper case for constants that are “hard-coded”. Or, in other words, when the value is known prior to execution and directly written into the code.
+    //In this code, birthday is exactly like that. So we could use the upper case for it.
+    //n contrast, age is evaluated in run-time. Today we have one age, a year after we’ll have another one. It is constant in a sense that it does not change through the code execution. But it is a bit “less of a constant” than birthday: it is calculated, so we should keep the lower case for it.
+    function add7(number) {
+      return number+7;
+    }
+    function multiply(number1, number2) {
+      return number1*number2;
+    }
+    function capitalize(string){
+      string = string.toLowerCase();
+      return string = string.charAt(0).toUpperCase() + string.slice(1); 
+    }
+    function lastLetter(string){
+      return string.charAt(string.length-1);
+    }
+    function FizzBuzz() {
+      let number = parseInt(prompt('Select your number:',''));
+      for(let i = 1; i<=number; i++)
+        {
+          if(i % 3 === 0 && i % 5 === 0) {
+            console.log(`FizzBuzz`);
+          }else if(i%3===0) {
+            console.log('Fizz');
+        }else if(i%5===0) {
+          console.log(`Buzz`);
+       } else { 
+        console.log(i);  
+      }  
+      }
+      }
+    
+ </script>
+</body>
+</html>
